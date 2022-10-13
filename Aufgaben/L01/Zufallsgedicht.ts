@@ -11,7 +11,10 @@ namespace zufallsgedicht {
     let subjekte: string[] = ["Harry", "Hermine", "Ron", "Hagrid", "Snape", "Dumbledore"];
     let prädikate: string[] = ["braut", "liebt", "studiert", "hasst", "zaubert", "zerstört"];
     let objekte: string[] = ["Zaubertränke", "den Grimm", "Lupin", "Hogwarts", "die Karte des Rumtreibers", "Dementoren"];
-    console.log(subjekte, prädikate, objekte);
+
+    console.log(subjekte);
+    console.log (prädikate);
+    console.log (objekte);
 
     for (let kamel: number = 6; kamel >= 1; kamel--) {
         let letzterSatz: string = getVerse(subjekte, prädikate, objekte);
