@@ -22,9 +22,9 @@ namespace zufallsgedicht {
     }
 
     function getVerse(_subjekte: string[], _prädikate: string[], _objekte: string[]): string {
-        let zufallSubjekte: number = Math.floor(Math.random() * _subjekte.length);
-        let zufallPrädikate: number = Math.floor(Math.random() * _subjekte.length);
-        let zufallObjekte: number = Math.floor(Math.random() * _subjekte.length);
+        let zufallSubjekte: number = Math.floor(Math.random());
+        let zufallPrädikate: number = Math.floor(Math.random());
+        let zufallObjekte: number = Math.floor(Math.random());
 
         let verse: string = _subjekte[zufallSubjekte] + " " + _prädikate[zufallPrädikate] + " " + _objekte[zufallObjekte] + ".";
 
