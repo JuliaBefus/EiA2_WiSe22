@@ -5,7 +5,7 @@ namespace zufallsgedicht {
     Name: Julia Befus
     Matrikel: 271025
     Datum: 12.10.2022
-    Quellen: Aanya Khetarpal, Pia Giovannelli, Paula Jordans
+    Quellen: Aanya Khetarpal, Pia Giovannelli, Paula Jordans, Havva Kilic
     */
 
     let subjekte: string[] = ["Harry", "Hermine", "Ron", "Hagrid", "Snape", "Dumbledore"];
@@ -17,7 +17,7 @@ namespace zufallsgedicht {
     console.log (objekte);
 
     for (let kamel: number = 6; kamel >= 1; kamel--) {
-        let letzterSatz: string = getVerse(subjekte, prädikate, objekte);
+        let letzterSatz: string = getVerse(subjekte, prädikate, objekte); //hier ist die Reihenfolge wichtig.
         console.log(letzterSatz);
     }
 
