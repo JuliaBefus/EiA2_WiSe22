@@ -15,6 +15,7 @@ h1 {
     margin-top: 120px;
     margin-left: 150px;
     background-color: white;
+    border-radius: 40px;
 }
 
 #div1 {
@@ -26,6 +27,7 @@ h1 {
     margin-right: 150px;
     margin-top: 120px;
     background-color: white;
+    border-radius: 40px;
 }
 
 span {
@@ -35,3 +37,4 @@ span {
     height: 200px;
     background-color: rgb(73, 99, 176);
 }
+
