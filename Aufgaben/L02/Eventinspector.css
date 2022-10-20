@@ -1,0 +1,37 @@
+html {
+    background-color: rgb(165, 191, 237);
+}
+
+h1 {
+    color: white;
+}
+
+#div0 {
+    border: thick solid rgb(73, 99, 176);
+    border-width: 7px;
+    float: left;
+    height: 480px;
+    width: 450px;
+    margin-top: 120px;
+    margin-left: 150px;
+    background-color: white;
+}
+
+#div1 {
+    border: thick solid rgb(73, 99, 176);
+    border-width: 7px;
+    float: right;
+    height: 480px;
+    width: 450px;
+    margin-right: 150px;
+    margin-top: 120px;
+    background-color: white;
+}
+
+span {
+    position: fixed;
+    z-index: 100;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(73, 99, 176);
+}
