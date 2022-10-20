@@ -1,4 +1,13 @@
-namespace L02_EventInspector {
+namespace EventInspector {
+
+    /*
+    Aufgabe: 02 EventInspector
+    Name: Julia Befus
+    Matrikel: 271025
+    Datum: 20.10.2022
+    Quellen: Aanya Khetarpal, Pia Giovannelli, Paula Jordans, Havva Kilic
+    */
+
 
     window.addEventListener("load", handleLoad);
 
