@@ -1,5 +1,12 @@
-var L02_EventInspector;
-(function (L02_EventInspector) {
+var EventInspector;
+(function (EventInspector) {
+    /*
+    Aufgabe: 02 EventInspector
+    Name: Julia Befus
+    Matrikel: 271025
+    Datum: 20.10.2022
+    Quellen: Aanya Khetarpal, Pia Giovannelli, Paula Jordans, Havva Kilic
+    */
     window.addEventListener("load", handleLoad);
     function handleLoad(_event) {
         let body = document.body;
@@ -41,5 +48,5 @@ var L02_EventInspector;
         let newEvent = new CustomEvent("petTheCat", { bubbles: true });
         button.dispatchEvent(newEvent);
     }
-})(L02_EventInspector || (L02_EventInspector = {}));
+})(EventInspector || (EventInspector = {}));
 //# sourceMappingURL=Eventinspector.js.map
