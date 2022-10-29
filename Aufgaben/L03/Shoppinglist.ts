@@ -6,65 +6,27 @@
     Quellen: Aanya Khetarpal, Pia Giovannelli, Paula Jordans, Havva Kilic
     */
 
-window.addEventListener("load", function (): void {
-    const input: HTMLInputElement = (document.getElementById("toDo") as HTMLInputElement);
-    const wrapper: HTMLElement = document.getElementById("todoWrapper");
+    window.addEventListener("load", handleLoad);
 
-    let todoCount: number = 0;
-
-
-    input.addEventListener("keydown", function (event: KeyboardEvent): void {
-        if (event.key === "Enter") {
-            createToDo();
-            clearInput();
-        }
-    });
-
-
-    function updateCounter(): void {
-        document.querySelector("#counterToDos").innerHTML = String(todoCount);
+    function handleLoad(): void {
+    
+        document.querySelector("#trash").addEventListener("click", trash);
+        document.querySelector("#check").addEventListener("click", check);
+        document.querySelector("#newitem").addEventListener("click", item);
     }
-
-    function clearInput(): void {
-        input.value = "";
+    
+    //Funktion für das Löschen eines Items (durch Mülleimer)
+    function trash(): void {
+        console.log("Item wird gelöscht von der Liste");
     }
-
-    function createToDo(): void {
-        todoCount++;
-        updateCounter();
-
-        const todoItem: HTMLDivElement = document.createElement("div");
-        const checkbox: HTMLInputElement = document.createElement("input");
-        const label: HTMLElement = document.createElement("label");
-        const trashButton: HTMLElement = document.createElement("i");
-
-        todoItem.className = "todoItem";
-        checkbox.type = "checkbox";
-        checkbox.className = "checkBox";
-        label.innerHTML = input.value;
-        label.className = "divLabel";
-        trashButton.className = " fas fa-trash-alt";
-
-
-        wrapper.appendChild(todoItem);
-        todoItem.appendChild(checkbox);
-        todoItem.appendChild(label);
-        todoItem.appendChild(trashButton);
-
-
-        trashButton.addEventListener("click", function (): void {
-            deleteItem(todoItem);
-        });
-
+    
+    //Funktion für das abhacken eines Items (durch Checkbox)
+    function check(): void {
+        console.log("Item wird abgehackt/wurde gekauft");
     }
-
-    function deleteItem(item: HTMLElement): void {
-
-        wrapper.removeChild(item);
-
-
-        todoCount--;
-        updateCounter();
+    
+    //Funktion für das hinzufügen eines Items (durch Plus)
+    function item(): void {
+        console.log("Neues Item wird hinzugefügt");
     }
-
-});
+    
