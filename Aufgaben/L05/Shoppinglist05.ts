@@ -42,7 +42,7 @@ namespace shoppinglistA05 {
     async function sendData(): Promise<void> {
         let formData: FormData = new FormData(document.forms[0]);
         let query: URLSearchParams = new URLSearchParams(<any>formData);
-        await fetch("Shoppinglist_05.html?" + query.toString());
+        await fetch("Shoppinglist05.html?" + query.toString());
         alert("Data sent");
     }
 

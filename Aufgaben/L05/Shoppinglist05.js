@@ -28,7 +28,7 @@ var shoppinglistA05;
     async function sendData() {
         let formData = new FormData(document.forms[0]);
         let query = new URLSearchParams(formData);
-        await fetch("L05.html?" + query.toString());
+        await fetch("Shoppinglist05.html?" + query.toString());
         alert("Data sent");
     }
     function loadData(data) {
@@ -106,4 +106,4 @@ var shoppinglistA05;
         commentx.value = "";
     }
 })(shoppinglistA05 || (shoppinglistA05 = {}));
-//# sourceMappingURL=Shoppinglist_05.js.map
+//# sourceMappingURL=Shoppinglist05.js.map
