@@ -1,0 +1,167 @@
+body {
+    background-image: url(./Wasser.jpg);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+   
+}
+
+.container1{
+    position: relative;
+    justify-content: center;
+    width: 400px;
+    height: 700px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    background-color: rgba(75, 123, 219, 0.639);
+    border-color: black ;
+    border-radius: 15px;
+}
+
+.title{
+    color: black;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:center;
+}
+
+#inputproduct{
+width: 300px;
+height: 20px;
+position: relative;
+background-color: white;
+left: 30px;
+top: 8px;
+border-style: ridge;
+}
+
+#trash{
+    opacity: 0.5;
+    position: relative;
+    left: 350px;
+    top: -17px;
+}
+
+#trash:hover {
+    opacity: 1;
+}
+
+#check {
+   left: 10;
+   position: absolute;
+}
+
+li:hover{
+    background-color: lightgrey;
+    width: 367px;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+#check {
+  background-color: white
+}
+  
+
+
+#amount {
+    position: relative;
+    left: 30px;
+    width: 300px;
+    height: 20px;
+    top: 4px;
+}
+
+#inputcomment {
+    position: relative;
+    left: 30px;
+    width: 300px;
+    height: 20px;
+    top: 0px;
+}
+
+#date {
+    position: relative;
+    left: 110px;
+    width: 150px;
+    height: 20px;
+    top: -4px;
+}
+
+fieldset {
+    border: none;
+}
+
+#allinputs {
+    border: none;
+}
+
+#edit {
+    color: black;
+    opacity: 0.5;
+    position: relative;
+    left: 380px;
+    top: -35px;
+}
+
+#edit:hover {
+    opacity: 1;
+}
+
+#alloutputs {
+    border-style: none;
+    width: 395px;
+    height: 410px;
+    position: relative;
+    left: 6px;
+}
+
+.checkbox {
+    position: relative;
+    left: 1px;
+}
+
+#buy{
+    color: black;
+    font-size: smaller;
+    position: relative;
+    left: 128px;
+}
+
+#checkboxdate{
+    position: relative;
+    left: 130px;
+    width: 20px;
+    height: 20px;
+    top: 4.5px;
+}
+
+.checkbox1{
+    position: relative;
+}
+
+#add{
+    background-color: white;
+    width: 100px;
+    height: 30px;
+    position: relative;
+    left: 155px;
+    border-radius: 10%;
+    top: -10px;
+    opacity: 0.7;
+    text-align: center;
+}
+
+#button{
+    position: relative;
+    top: -190px;
+}
+
+button:hover {
+    transform: scale(1.15);
+    transition: 0.3s;
+}
