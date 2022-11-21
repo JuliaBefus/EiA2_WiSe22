@@ -30,7 +30,7 @@ namespace L06_shoppinglist {
     async function handleload(): Promise<void> {
         document.querySelector("#add").addEventListener("click", handleaddbutton);
 
-        let response: Response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/index.php/?command=find&collection=data");
+        let response: Response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/?command=find&collection=shoppinglist");
         let report: string = await response.text();
         let inputs: Item = JSON.parse(report);
 
@@ -62,7 +62,7 @@ namespace L06_shoppinglist {
         query.set("data", JSON.stringify(json));
         console.log("data sent");
 
-        let response: Response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/index.php?" + query.toString());
+        let response: Response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/?" + query.toString());
         console.log(response);
         alert("sent");
 
@@ -253,7 +253,7 @@ namespace L06_shoppinglist {
         query.set("collection", "data");
         query.set("data", JSON.stringify(json));
 
-        let response: Response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/index.php?" + query.toString()); //DBS empfängt 
+        let response: Response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/?" + query.toString()); //DBS empfängt 
         console.log("date refreshed");
     }
 
@@ -267,7 +267,7 @@ namespace L06_shoppinglist {
         query.set("collection", "data");
         query.set("id", counter.toString());
 
-        let response: Response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/index.php?" + query.toString()); // DBS empfängt
+        let response: Response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/?" + query.toString()); // DBS empfängt
         console.log("delete");
 
     }

@@ -1,17 +1,17 @@
 [{
-    "item": "Leinsamen",
-    "amount": 1,
-    "comment": "geschrotet",
-    "date": "12.11.2022 ",
-    "purchase": "kaufen"
+    "item":"Leinsamen",
+    "amount":1,
+    "comment":"geschrotet",
+    "date":"12.11.2022 ",
+    "purchase":"kaufen"
   
 },
 {
-    "item": "Wasser",
-    "amount": 2,
-    "comment": "nur still",
-    "date": "12.11.2022  ",
-    "purchase": "kaufen"
+    "item":"Wasser",
+    "amount":2,
+    "comment":"nur still",
+    "date":"12.11.2022  ",
+    "purchase":"kaufen"
 }
 
 ]
