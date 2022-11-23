@@ -10,7 +10,7 @@ var L06_shoppinglist;
     window.addEventListener("load", handleload);
     async function handleload() {
         document.querySelector("#add").addEventListener("click", handleaddbutton);
-        let response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/index.php/?command=find&collection=data");
+        let response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/?command=find&collection=shoppinglist");
         let report = await response.text();
         let inputs = JSON.parse(report);
         loaddata(inputs);
@@ -33,7 +33,7 @@ var L06_shoppinglist;
         query.set("collection", "data");
         query.set("data", JSON.stringify(json));
         console.log("data sent");
-        let response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/index.php?" + query.toString());
+        let response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/?" + query.toString());
         console.log(response);
         alert("sent");
     }
@@ -184,7 +184,7 @@ var L06_shoppinglist;
         query.set("command", "update");
         query.set("collection", "data");
         query.set("data", JSON.stringify(json));
-        let response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/index.php?" + query.toString()); //DBS empfängt 
+        let response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/?" + query.toString()); //DBS empfängt 
         console.log("date refreshed");
     }
     // Löschen von dem Eintrag
@@ -194,7 +194,7 @@ var L06_shoppinglist;
         query.set("command", "delete");
         query.set("collection", "data");
         query.set("id", counter.toString());
-        let response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/index.php?" + query.toString()); // DBS empfängt
+        let response = await fetch("https://webuser.hs-furtwangen.de/~befusjul/Database/?" + query.toString()); // DBS empfängt
         console.log("delete");
     }
     //Funktion für das Editieren des  Eintrags

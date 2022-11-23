@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(89, 130, 130);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+canvas {
+    border: solid rgb(229, 239, 239);
+    border-radius: 5px;
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    background-color: rgb(70, 103, 103);
+    border: 0;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: rgb(89, 130, 130);
+}
