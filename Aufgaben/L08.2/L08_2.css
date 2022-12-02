@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+    background-color: rgb(143, 221, 240);
+    color: rgb(255, 255, 255);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+canvas {
+    border: solid  rgb(143, 221, 240);
+    border-radius: 5px;
+}
