@@ -34,11 +34,11 @@ var Farm;
         document.querySelector("#nextDay").addEventListener("click", foodForAnimal);
     }
     function loadAnimals() {
-        let cow = new Animal("Milkboi", "cow", "greens", "moo", 10);
-        let dog = new Animal("Good Doggo", "dog", "meat", "woof", 12);
-        let cat = new Animal("Sir Miauz", "cat", "fish", "miauz", 5);
-        let chicken = new Animal("Kentucky", "chicken", "corn", "bock", 30);
-        let pig = new Animal("Bacon", "pig", "carrots", "quick", 25);
+        let cow = new Animal("Lilia", "cow", "greens", "moo", 10);
+        let dog = new Animal("Beam", "dog", "meat", "woof", 12);
+        let cat = new Animal("Barsik", "cat", "fish", "miauz", 5);
+        let chicken = new Animal("Donald", "chicken", "corn", "bock", 30);
+        let pig = new Animal("Sia", "pig", "carrots", "quick", 25);
         animals.push(cow);
         animals.push(dog);
         animals.push(cat);

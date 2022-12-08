@@ -48,11 +48,11 @@ namespace Farm {
     }
 
     function loadAnimals(): void {
-        let cow: Animal = new Animal("Milkboi", "cow", "greens", "moo", 10);
-        let dog: Animal = new Animal("Good Doggo", "dog", "meat", "woof", 12);
-        let cat: Animal = new Animal("Sir Miauz", "cat", "fish", "miauz", 5);
-        let chicken: Animal = new Animal("Kentucky", "chicken", "corn", "bock", 30);
-        let pig: Animal = new Animal("Bacon", "pig", "carrots", "quick", 25);
+        let cow: Animal = new Animal("Lilia", "cow", "greens", "moo", 10);
+        let dog: Animal = new Animal("Beam", "dog", "meat", "woof", 12);
+        let cat: Animal = new Animal("Barsik", "cat", "fish", "miauz", 5);
+        let chicken: Animal = new Animal("Donald", "chicken", "corn", "bock", 30);
+        let pig: Animal = new Animal("Sia", "pig", "carrots", "quick", 25);
 
         animals.push(cow);
         animals.push(dog);
