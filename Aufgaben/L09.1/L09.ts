@@ -1,3 +1,11 @@
+/*
+Aufgabe: 9.1 Old MacDonalds Farm
+Name: Julia Befus
+Matrikel: 271025
+Datum: 08.11.2022
+Quellen: Aanya Khetarpal, Pia Giovannelli, Paula Jordans, Havva Kilic
+*/
+
 namespace Farm {
 
     class Animal {
